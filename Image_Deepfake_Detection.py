@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load the saved model
-model = tf.keras.models.load_model("deepfake-detector-model.keras","rb")
+model = tf.keras.models.load_model("deepfake-detector-model.keras")
 
 # Function to preprocess the image
 def preprocess_image(image):
