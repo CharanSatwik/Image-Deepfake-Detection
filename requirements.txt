@@ -11,3 +11,4 @@ tensorflow==2.3.0
 tensorflow==2.6.0
 tensorflow==2.17.0
 tensorflow_intel==2.17.0
+setuptools>=42
