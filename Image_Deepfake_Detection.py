@@ -18,9 +18,9 @@ def predict_deepfake(image_path):
         image = Image.open(image_path)
         preprocessed_image = preprocess_image(image)
         prediction = model.predict(preprocessed_image)
-        predicted_label = np.round(prediction)[0][0]
+        predicted_label = prediction[0][0]
 
-        if predicted_label == 1:
+        if predicted_label >= 0.61:
             return "Fake"
         else:
             return "Real"
