@@ -5,7 +5,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load the pre-trained deepfake detection model
-model = tf.keras.models.load_model("deepfake-detector-model.keras")
+model = tf.keras.models.load_model("deepfake-detector-model.keras", custom_objects=None)
+
 
 def preprocess_image(image):
     img = image.resize((128, 128))
